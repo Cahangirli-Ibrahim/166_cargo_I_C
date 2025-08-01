@@ -1,108 +1,261 @@
 * {
   box-sizing: border-box;
 }
-
-p {
-  margin: 0;
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+p,
+a {
+  font-family: var(--primaryFont--);
+  font: 600 16px var(--primaryFont--);
 }
 
-.homeHeader {
-  padding: 14px 0 20px 0;
-}
-
-.headerLeft {
+.container {
   display: flex;
+  flex-direction: column;
 }
 
-.ferdiMusteri {
-  border-radius: 8px 0 0 8px;
-  padding: 10px;
-  border: 1px solid var(--mainColor);
-  color: var(--mainColor);
-  font: 500 14px var(--mainFont);
-  box-shadow: 0px 0px 4px 0px #0000001f;
+header {
+  padding-bottom: 20px;
 }
 
-.korporativMusteri {
-  display: flex;
+.customer {
+  color: var(--primaryColor--);
+  border-radius: 6px;
+  border: 2px solid var(--primaryColor--);
   align-items: center;
-  border: 1px solid 0000001f;
-  border-left: none;
-  padding: 10px;
-  border-radius: 0 8px 8px 0;
-  box-shadow: 0px 0px 4px 0px #0000001f;
 }
-
-.cardSection {
-  display: flex;
+.Korperativ {
+  border-radius: 6px;
   align-items: center;
-  gap: 6px;
-  font: 500 14px var(--mainFont);
+  border: 1px solid rgba(128, 128, 128, 0.358);
+  border-radius: 6px;
+  height: 40px;
 }
 
-.languageButton {
-  background-color: transparent;
-  border: none;
-}
-
-.myNavbar {
-  padding: 6px 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.customer p {
+  margin-bottom: 0;
 }
 
 .search {
+  padding-left: 350px;
   display: flex;
   align-items: center;
-  border-radius: 8px;
-  border: 1px solid #f3f3f3;
-  padding: 9px 0 9px 16px;
-  width: 200px;
-  gap: 10px;
+  border: rgba(128, 128, 128, 0.404);
+  border-radius: 10px;
 }
 
-.search div input {
-  padding-right: 10px;
+.input {
+  padding-left: 15px;
+  border: none;
   width: 100%;
 }
 
-.search div input,
-.search div input:focus,
-.search div input:active,
-.search div input:hover {
-  border: none;
-  outline: none;
+.linkler {
+  padding-right: 20px;
+}
+.linkler ul:last-child {
+  margin-right: 20px;
 }
 
-.navbarLinks {
-  padding-left: 50px;
+.call {
+  border: 2px solid var(--primaryColor--);
+  margin-left: 20px;
+  border-radius: 6px;
+  background-color: var(--primaryColor--);
+  width: 136px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.call div p {
+  color: white;
+  font: 600 16px var(--primaryFont--);
+}
+.logo {
+  /* margin: 0 0 0 20px; */
+  padding-left: 10px;
 }
 
-.navbarLinks > ul {
+.headerRight {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 58px;
 }
 
-.navbarRight {
+.onlaynÖdeniş p {
+  padding-top: 15px;
+  padding-left: 15px;
+}
+
+.navbar {
+  margin-left: 200px;
+  margin-top: 0;
+}
+
+ul {
+  text-decoration: none;
   display: flex;
   align-items: center;
+  gap: 20px;
 }
 
 .bookACall {
+  background-color: var(--primaryColor--);
+  border-radius: 5px;
   display: flex;
   align-items: center;
-  gap: 10px;
-  width: 136px;
-  border: none;
-  background-color: var(--mainColor);
-  color: white;
-  font: 600 16px var(--mainFont);
-  padding: 8px 10px;
+  width: 130px;
+  height: 40px;
+}
+
+.secondSection ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.secondSection {
+  margin-top: 54px;
+}
+
+.secondSection ul li:not(:last-child) {
+  padding-right: 10px;
+}
+.li1 {
+  border-bottom: 3px solid var(--primaryColor--);
+}
+
+.li1 a {
+  color: var(--primaryColor--);
+}
+
+.dropdown {
+  display: flex;
+  align-items: center;
+}
+.dropdown div:not(:last-child)::after {
+  content: ">";
+  margin-left: 9px;
+}
+.continerHaqqimizda {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.containerHaqqimizdaLeft div img {
+  width: 600px;
+  height: 375px;
+  object-fit: cover;
   border-radius: 8px;
 }
 
-.dropdown-menu {
-  margin-top: 10px !important;
+.containerHaqqimizdaLeft div {
+  margin-top: 30px;
+}
+
+.xett {
+  width: 52px;
+  height: 1px;
+  border: 1px solid var(--primaryColor--);
+}
+
+.containerMissiyamiz {
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.containerHaqqimizdaRight p {
+  margin-top: 80px;
+  font: 400 16px var(--primaryFont--);
+  font-style: regular;
+  color: #343434;
+  line-height: 26px;
+  letter-spacing: 1px;
+}
+
+.containerMissiyamizLeft {
+  width: 604px;
+  height: 690px;
+  border-radius: 10px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: right;
+}
+
+.containerMissiyamizLeft div .p5,
+.p6,
+.p7,
+.p8 {
+  color: white;
+  font: 600 36px var(--primaryFont--);
+}
+
+.containerMissiyamizLeft > div:not(:last-child) {
+  border-bottom: 1px solid #343434;
+}
+
+.containerMissiyamizLeft div {
+  width: 228px;
+  height: 130px;
+  margin-top: 70px;
+  margin-right: 70px;
+}
+
+.containerMissiyamizLeft div .p1,
+.p2,
+.p3,
+.p4 {
+  font: 500 16px var(--primaryFont--);
+  font-style: medium;
+  color: white;
+  padding-top: 20px;
+}
+
+.containerMissiyamizRight {
+  margin-left: 40px;
+  width: 600px;
+}
+
+.containerMissiyamizRightText {
+  margin-top: 20px;
+  font: 400 16px var(--primaryFont--);
+  font-style: regular;
+  color: #343434;
+  line-height: 26px;
+  letter-spacing: 1px;
+}
+
+.xususiyyetlerimiz {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sürətliXidmət {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+div > svg {
+  width: 50px;
+  height: 20px;
+}
+
+.sürətliXidmət > div {
+  border: 1px solid #343434;
+  border-radius: 10px;
+  width: 239px;
+  height: 192px;
 }
