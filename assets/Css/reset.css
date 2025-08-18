@@ -1,3 +1,8 @@
+/* /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
 html,
 body,
 div,
@@ -122,36 +127,15 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
 a {
   text-decoration: none;
   color: black;
+  font-family: var(--primaryFont--);
 }
 
 a:hover {
-  color: black;
+  color: var(--primaryColor--);
 }
-
-button {
-  border: none;
-  background-color: transparent;
-}
-
-.dropdown-menu {
-  min-width: min-content;
-  padding: 5px 10px;
-}
-
-.dropdown-item:hover {
-  background-color: transparent;
-  color: #000;
-}
-
-.dropdown-item:active,
-.dropdown-item:focus {
-  background-color: transparent;
-}
-
-.dropdown-toggle {
-  padding: 0px;
+li {
+  font: 400 13px var(--primaryFont--);
 }

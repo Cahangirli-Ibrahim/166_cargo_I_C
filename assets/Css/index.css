@@ -85,6 +85,10 @@ header {
   align-items: center;
   gap: 58px;
 }
+.onlaynÖdeniş2 {
+  display: flex;
+  align-items: center;
+}
 
 .onlaynÖdeniş p {
   padding-top: 15px;
@@ -102,14 +106,22 @@ ul {
   align-items: center;
   gap: 20px;
 }
+.əsasSehive {
+  width: 100px;
+  text-align: center;
+}
 
 .bookACall {
   background-color: var(--primaryColor--);
   border-radius: 5px;
   display: flex;
   align-items: center;
-  width: 130px;
+  width: 150px;
   height: 40px;
+}
+
+.bookACall p {
+  color: white;
 }
 
 .secondSection ul {
@@ -147,7 +159,7 @@ ul {
   display: flex;
   align-items: center;
   gap: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 .containerHaqqimizdaLeft div img {
@@ -258,4 +270,146 @@ div > svg {
   border-radius: 10px;
   width: 239px;
   height: 192px;
+}
+
+.xidmetLogo {
+  width: 44px;
+  height: 44px;
+  border-radius: 54px;
+  background: #d7d7d7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: 600 20pxvar (--PrimaryFont);
+  color: white;
+  margin-bottom: 18px;
+}
+
+.xidmetTitle {
+  font: 600 20px var (--PrimaryFont);
+  color: #111827;
+  margin-bottom: 10px;
+}
+
+.xidmetTitle p {
+  font: 600 20px var (--PrimaryFont);
+}
+.haqqimizdaTitle p {
+  font: 600 32px var (--PrimaryFont);
+  color: #111827;
+}
+
+.xidmetDesc {
+  font: 400 16px var (--PrimaryFont);
+  color: #4c4c4c;
+}
+
+.bizNecəIşleyirik {
+  margin-bottom: 120px;
+}
+
+.bizNecəIşleyirik ul li {
+  padding-bottom: 20px;
+}
+
+.bizNecəIşleyirik ul div:nth-child(odd) li {
+  padding-left: 20px;
+  border-left: 8px solid #f2f2f2;
+}
+
+.bizNecəIşleyirik ul > div:nth-child(odd) {
+  display: flex;
+  justify-content: end;
+}
+
+.bizNecəIşleyirik ul div:nth-child(even) li {
+  padding-right: 20px;
+  margin-left: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  border-right: 8px solid #f2f2f2;
+}
+
+.bizNecəIşleyirik ul div:nth-child(even) li div.xidmetDesc {
+  text-align: end;
+}
+
+.selectedLogo {
+  background: var(--primaryColor--);
+}
+
+.bizNecəIşleyirik ul div:nth-child(2) li {
+  border-color: var(--primaryColor--);
+}
+
+.bizNecəIşleyirik ul > div:nth-child(1) li {
+  border-radius: 10px 0 0 0;
+}
+
+.bizNecəIşleyirik ul > div:nth-child(6) li {
+  border-radius: 0 0 10px 0;
+}
+
+.containerFooter {
+  background-color: var(--primaryColor--);
+  display: flex;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.containerUl {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--primaryColor--);
+  border-radius: 10px;
+  width: 100%;
+  height: 400px;
+  padding-top: 20px;
+}
+
+.containerUl ul {
+  width: 100%;
+  padding-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.containerUl ul.logo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 15px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  flex: row !important;
+}
+.logoContainer {
+  width: 100%;
+}
+
+.containerUl ul li img {
+  width: 28px;
+  height: 27px;
+  border-radius: 14px;
+}
+
+.containerAltYazi {
+  background-color: var(--primaryColor--);
+  width: 100%;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerAltYazi p {
+  font: 400 14px var(--primaryFont--);
+  padding-bottom: 20px;
 }
